@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../common.css">
+    <style>
+        .button{
+            position: absolute;
+            left: 33%;
+            top: 50%;
+        }
+        .fade-out-box {
+            position:absolute;
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+            background: black;
+            animation: fadeout 3s;
+            -webkit-animation: fadeout 3s; /* Safari and Chrome */
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeout {
+           from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+        .fade-in-box {
+            position:absolute;
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+            animation: fadein 3s;
+            -webkit-animation: fadein 3s; /* Safari and Chrome */
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadein {
+           from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .button1{
+            position: absolute;
+            width:10%;
+            top:80%;
+            left:1%;
+        }
+        
+    </style>
+</head>
+<body>
+    <img class="background" src="chairpuzzle2.png">
+    <div class="fade-out-box"></div>
+    <a class="fade-in-box" href="advancedchair.html"><img class="button1" src="arrow3.png"></a>
+</body>
+</html>
